@@ -14,7 +14,7 @@ import 'package:lsm/main.dart';
 void main() {
   testWidgets('Counter increments smoke test', (WidgetTester tester) async {
     // Build our app and trigger a frame.
-    await tester.pumpWidget(const MyApp());
+    await tester.pumpWidget(const LSMApp());
     // await tester.pumpWidget(const SysAdminApp());
 
     // Verify that our counter starts at 0.
