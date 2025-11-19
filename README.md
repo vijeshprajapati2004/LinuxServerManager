@@ -1,4 +1,4 @@
-# lsm
+# Linux Server Manager
 
 A new Flutter project.
 
