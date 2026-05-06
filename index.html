@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../asset/css/common.css">
+    <link rel="stylesheet" href="../asset/css/header.css">
+    <link rel="stylesheet" href="../asset/css/index.css">
+    <link rel="stylesheet" href="../asset/media/common-media.css">
+    <link rel="stylesheet" href="../asset/media/header-media.css">
+    <link rel="stylesheet" href="../asset/media/index-media.css">
+    <link rel="stylesheet" href="../asset/css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <script defer src="../asset/javaScript/header.js"></script>
+    <script defer src="../asset/javaScript/index.js"></script>
+    <title>Habibi</title>
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+
+    
+    <header class="main-header">
+        <div class="container nav-container">
+            <nav class="top-navbar">
+                <div class="nav-menu-btn-container">
+                    
+                    <img class="nav-menu-btn" src="../img/menu-btn-white.png" alt="" onclick="sidemenuOpen()">
+                    
+                </div>
+                <div class="nav-logo-container">
+                    <a href="#">
+                        <svg height="40" width="180">
+                            <ellipse cx="90" cy="22" rx="70" ry="17" fill="url(#grad1)" />
+                            <text fill="#ffffff" font-size="26" font-style ="italic" x="40" y="30">HABIBI</text>
+                            Sorry, your browser does not support inline SVG.
+                        </svg>
+                    </a>
+                </div>
+                <div class="nav-searchbox-container">
+                    <form class="nav-searchbox-form" action="">
+                        <button class="nav-searchbox-button">
+                            <img class="nav-search-icon" src="../img/search-icon.png" alt="">
+                        </button>
+                        <script defer src="../css/cssJavascript.js"></script>
+                        <input class="nav-search-textbox" type="text" placeholder="Where to go...?">
+                    </form>
+                </div>
+
+                <div class="nav-menu-container">
+                    <ul class="nav-ul">
+                        <button class="button nav-button" onclick="showSingup()">Sign up</button>
+                    </ul>
+                </div>
+            </nav>
+            <div class="container fix-navbar-container">
+                <nav class="fix-navbar">
+                    <ul class="fix-navbar-ul">
+                       <a href="#" class="fix-navbar-link"> <li class="fix-navbar-li">place</li></a>
+                       <a href="#" class="fix-navbar-link"><li class="fix-navbar-li">Hotels</li></a>
+                       <a href="#" class="fix-navbar-link"><li class="fix-navbar-li">Restaurant</li></a>
+                       <a href="#" class="fix-navbar-link"><li class="fix-navbar-li">Agent Booking</li></a>
+                       <a href="#" class="fix-navbar-link"><li class="fix-navbar-li">Make my trip</li></a>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="container heder-text">
+            <section>
+                <h3>Welcome To Warangal</h3>
+                <h1>DO COME & VISIT 
+                <span class="change-content"> </span></h1>
+                <p>"Habibi Come to Warangal"</p>
+            </section>
+        </div>
+
+        <!-- ######################## Sidebar menu ###################### -->
+        
+        <nav class="sidebar-menu" id="sidebarID">
+            <ul class="sidebar-nav">
+                    <span class="signup-close-button" onclick="sidemenuClose()">
+                        &times;
+                    </span>
+                    <li class="sidebar-item">   
+                        <a href="#" class="site-name">Habibi</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="nav-link" onclick="sidemenuShowSingup()">Singup</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="nav-link">Places</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="nav-link">Hotels</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="nav-link">Restaurant</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="nav-link">Agent Booking</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="nav-link">Make my trip</a>
+                    </li>
+                    <li class="sidebar-item">
+                            <a href="#" class="nav-link">Contact Us</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="nav-link">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-youtube"></i>
+                        </a>
+                    </li>
+                </ul>    
+        </nav>
+
+    </header>
+
+    <section class="signup-back-container">
+        <div class="signup-front-container">
+            <span class="signup-close-button" onclick="closeSingup()">
+                &times;
+            </span>
+            <div class="signup-form-container">
+                <header>Sign up</header>
+                <form action="#" class="signup-form">
+                  <input type="textbox" name="name" placeholder="Name" required />
+                  <input type="email" name="email" placeholder="E-mail" required/>
+                  <input type="password" name="password" placeholder="Password" required/>
+                  <input type="password" name="re-password" placeholder="Retype password" required/>
+                  
+                  <input type="submit" name="signup_submit" value="Sign up" />
+                </form>
+            </div>
+            <hr>
+            <div class="signin-line">
+                <p>
+                    Already Account? <span onclick="showSingin()"> click here...<span>
+                </p>
+            </div>
+        </div>
+        <div class="signin-front-container">
+            <span class="signup-close-button" onclick="closeSingup()">
+                &times;
+            </span>
+            <div class="signin-form-container">
+                <header>Sign in</header>
+                <form action="#" class="signin-form">
+                  <!-- <input type="textbox" name="name" placeholder="Name" required /> -->
+                  <input type="email" name="email" placeholder="E-mail" required/>
+                  <input type="password" name="password" placeholder="Password" required/>
+                  <!-- <input type="password" name="re-password" placeholder="Retype password" required/> -->
+                  <div >
+                    <input type="checkbox" name="password-remember" id="pas-re"><label for="pas-re">Remeber me</label>
+                    <span onclick="showforget()">Forget Password? </span>
+                  </div>
+                  
+                  <input type="submit" name="signup_submit" value="Sign in" />
+                </form>
+            </div>
+            <hr>
+            <div class="signup-line">
+                <p>
+                    Create Account? <span onclick="showSingup()"> click here...<span>
+                </p>
+            </div>
+        </div>
+        <div class="forget-front-container">
+            <span class="signup-close-button" onclick="closeSingup()">
+                &times;
+            </span>
+            <div class="forget-form-container">
+                <header>Forget Password</header>
+                <form action="#" class="forget-form">
+                  <!-- <input type="textbox" name="name" placeholder="Name" required /> -->
+                  <input type="email" name="email" placeholder="E-mail" required/>
+                  <input type="password" name="password" placeholder="Password" required/>
+                  <input type="password" name="re-password" placeholder="Retype password" required/>
+                  <!-- <div >
+                    <input type="checkbox" name="password-remember" id="pas-re"><label for="pas-re">Remeber me</label>
+                    <span>Forget Password? </span>
+                  </div> -->
+                  
+                  <input type="submit" name="signup_submit" value="Forget password" />
+                </form>
+            </div>
+            <!-- <hr>
+            <div class="signup-line">
+                <p>
+                    Create Account? <span onclick="showSingup()"> click here...<span>
+                </p>
+            </div> -->
+        </div>
+    </section>
+
+    <div class="container bottom-navbar-container">
+        <nav class="bottom-navbar">
+            <ul class="bottom-nav-ul">
+                <li class="bottom-nav-li">
+                    <a href="https://www.google.com/maps/search/telangana+tourist+places/@17.8106878,78.4456504,8.5z/data=!4m2!2m1!6e1?entry=ttu">
+                        <div class="bottom-nav-icon-container">
+                            <img class="bottom-nav-icon" src="../img/placeicon.png" alt="">
+                        </div>
+                        <div class="bottom-nav-text-container">
+                            <span class ="bottom-nav-text" >Places</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="bottom-nav-li">
+                    <a href="https://www.agoda.com/en-in/?cid=1891461&tag=3cda3586-9ec8-88d2-2819-7b1e8bb3ad04&gclid=CjwKCAjw5ImwBhBtEiwAFHDZx_Lv4YH0dzXAVbNhtGujzj6NEpodoBGHyggDAMwCBeAWRw73s1PXIxoCJW0QAvD_BwE&ds=UydXmL7Pq2Iz5X6a">
+                        <div class="bottom-nav-icon-container">
+                            <img class="bottom-nav-icon" src="../img/hotelicon.png" alt="">
+                        </div>
+                        <div class="bottom-nav-text-container">
+                            <span class ="bottom-nav-text" >Hotels</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="bottom-nav-li">
+                    <a href="https://www.tripadvisor.in/Restaurants">
+                        <div class="bottom-nav-icon-container">
+                            <img class="bottom-nav-icon" src="../img/restauranticon.png" alt="">
+                        </div>
+                        <div class="bottom-nav-text-container">
+                            <span class ="bottom-nav-text" >Restaurant</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="bottom-nav-li">
+                    <a href="agent.html">
+                        <div class="bottom-nav-icon-container">
+                            <img class="bottom-nav-icon" src="../img/traveller.png" alt="">
+                        </div>
+                        <div class="bottom-nav-text-container">
+                            <span class ="bottom-nav-text" >Agent Booking</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="bottom-nav-li makeMyTrip-for-media">
+                    <a href="https://plantrip.io">
+                        <div class="bottom-nav-icon-container">
+                            <img class="bottom-nav-icon" src="../img/world.png" alt="">
+                        </div>
+                        <div class="bottom-nav-text-container">
+                            <span class ="bottom-nav-text">Plan my trip</span>
+                            
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <section class="top-place">
+        <div class="container place-container">
+            <div class="prev-btn ctrl-btn topPlacePrvbtn" > &lt;  </div>
+            <div class="next-btn ctrl-btn topPlaceNextbtn"> &gt; </div>
+            <div>
+                <h1>Top Places</h1>
+            </div>
+            <hr>
+            <div class="card-container" id="topPlaceSlider">
+                <div class="card-wrapper" id="topPlaceSlide">
+                <section class="card">
+                    <a class="card-link"  id="place-card-link" href="">
+                    <div class="card-img-container">
+                        <img class="card-img" src="../img/Places/Bhadrakali_Temple.jpg" alt="">
+                        <div class="card-place-name" id = "card-place-name">
+                            <h2>Bhadrakali Temple</h2>
+                        </div>
+                    </div>
+                    <div class="card-details">
+                        <article>
+                            <p>Bhadrakali Temple is one of the oldest temples for Goddess Bhadrakali.</p>
+                        </article>
+                    </div>
+                    </a>
+                </section>
+                <section class="card">
+                    <a class="card-link"  id="place-card-link" href="">
+                    <div class="card-img-container">
+                        <img class="card-img" src="../img/Places/warangal_fort.jpg" alt="">
+                        <div class="card-place-name" id = "card-place-name">
+                            <h2>Warangal Fort</h2>
+                        </div>
+                    </div>
+                    <div class="card-details">
+                        <article>
+                            <p>Warangal Fort is located in Warangal District, It was the capital city of Kakatiya dynasty and the Musunuri Nayakas.</p>
+                        </article>
+                    </div>
+                    </a>
+                </section>
+                <script>
+                    
+                </script>
+                <section class="card">
+                    <a class="card-link" href="">
+                    <div class="card-img-container">
+                        <img class="card-img" src="../img/Places/ramappa.jpg" alt="">
+                        <div class="card-place-name">
+                            <h2>Ramappa Temple</h2>
+                        </div>
+                    </div>
+                    <div class="card-details">
+                        <article>
+                            <p>Ramappa Temple, also known as the Rudreswara temple, is a Kakatiya style Hindu temple dedicated to the Hindu god Shiva.</p>
+                        </article>
+                    </div>
+                    </a>
+                </section>
+                <section class="card">
+                    <a class="card-link" href="">
+                    <div class="card-img-container">
+                        <img class="card-img" src="../img/Places/Bhadrakali_Lake.jpg" alt="">
+                        <div class="card-place-name">
+                            <h2>Bhadrakali Lake</h2>
+                        </div>
+                    </div>
+                    <div class="card-details">
+                        <article>
+                            <p>Bhadrakali Lake is a lake in Warangal, Telangana built by Ganapati of Kakatiya dynasty. </p>
+                        </article>
+                    </div>
+                    </a>
+                </section>
+                <section class="card">
+                    <a class="card-link" href="">
+                    <div class="card-img-container">
+                        <img class="card-img" src="../img/Places/laknavaram.jpg" alt="">
+                        <div class="card-place-name">
+                            <h2>Laknavaram Lake</h2>
+                        </div>
+                    </div>
+                    <div class="card-details">
+                        <article>
+                            <p>Laknavaram Lake is a lake in Govindaraopet mandal in Mulugu district, Warangal</p>
+                        </article>
+                    </div>
+                    </a>
+                </section>
+                <section class="card">
+                    <a class="card-link" href="">
+                    <div class="card-img-container">
+                        <img class="card-img" src="../img/Places/Padmakshi.jpeg" alt="">
+                        <div class="card-place-name">
+                            <h2>Padmakshi Temple</h2>
+                        </div>
+                    </div>
+                    <div class="card-details">
+                        <article>
+                            <p>Padmakshi Temple is one of the oldest temples. It is dedicated to the Hindu goddess Padmakshi  </p>
+                        </article>
+                    </div>
+                    </a>
+                </section>
+                <section class="card">
+                    <a class="card-link" href="">
+                    <div class="card-img-container">
+                        <img class="card-img" src="../img/Places/thousand_pillar.2jpg.jpg" alt="">
+                        <div class="card-place-name">
+                            <h2>Thousand Pillar Temple</h2>
+                        </div>
+                    </div>
+                    <div class="card-details">
+                        <article>
+                            <p>The Thousand Pillar Temple is a historical Hindu temple located in the town of Hanamakonda,</p>
+                        </article>
+                    </div>
+                    </a>
+                </section>
+                <section class="card">
+                    <a class="card-link" href="">
+                    <div class="card-img-container">
+                        <img class="card-img" src="../img/Places/bogatha.jpg" alt="">
+                        <div class="card-place-name">
+                            <h2>Bogatha Waterfall</h2>
+                        </div>
+                    </div>
+                    <div class="card-details">
+                        <article>
+                            <p>Bogatha Waterfall is a waterfall located in Wazeedu Mandal 40Km from Warangal.</p>
+                        </article>
+                    </div>
+                    </a>
+                </section>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="hotel">
+        <div class="container place-container">
+            <div class="prev-btn ctrl-btn hotelPrvbtn" > &lt;  </div>
+            <div class="next-btn ctrl-btn hotelNextbtn"> &gt; </div>
+            <div>
+                <h1>Top Hotel</h1>
+            </div>
+            <hr>
+            <div class="card-container" id="hotelSlider">
+                <div class="card-wrapper" id="hotelSlide">
+                <section class="card">
+                    <a class="card-link"  id="place-card-link" href="">
+                    <div class="card-img-container">
+                        <img class="card-img" src="../img/Hotels/thousand_pillar.jpg" alt="">
+                        <div class="card-place-name" id = "card-place-name">
+                            <h2>HOTEL THOUSAND PILLARS</h2>
+                            <!-- https://www.google.com/travel/hotels/India/entity/ChYI1_7cptqQwZTAARoJL20vMDZieDFjEAE?g2lb=202158%2C2502548%2C4258168%2C4260007%2C4270442%2C4274032%2C4305595%2C4306835%2C4317915%2C4322823%2C4328159%2C4364504%2C4366684%2C4367953%2C4371334%2C4381263%2C4386665%2C4395590%2C4396533%2C4397706%2C4398672%2C4399105%2C4401769%2C4403881%2C4270859%2C4284970%2C4291517%2C4316256&hl=en&gl=in&un=1&ap=aAE&q=5%20star%20hotels%20in%20india&rp=EJr98c-_jeD1IRDX_tym2pDBlMABELKK1_im3KKwgwEQ5YzJtqe9158wOAFAAEgCogEFSW5kaWE&ictx=1&sa=X&utm_campaign=sharing&utm_medium=link&utm_source=htls&hrf=CgUIiCcQACIDSU5SKhYKBwjkDxAIGAMSBwjkDxAIGAQYASgAOAWwAQBYAWgBmgEHEgVJbmRpYaIBEQoIL20vMDNyazASBUluZGlhqgEqCgIIIRICCAgSAghlEgIIFRICCGcSAghbEgIILxICCFoSAghUEgIIIBgBqgEPCgIIEhIDCJsBEgIIaBgBqgESCgIIFBICCB0SAggbEgIIUhgBqgEHCgMIoQIYAKoBGgoCCBwSAggHEgIIURICCHMSAghHEgIINhgBqgEfCgIIJRICCHUSAwigAhICCHcSAgh5EgIIehICCHYYAaoBGwoCCBESAggqEgIIQBICCDgSAwiZAhICCAIYAaoBPgoCCC4SAgg8EgIIVhICCDoSAwiHARICCBoSAghIEgMIgQISAgg9EgMIgwESAggDEgIIDBIDCIkBEgIIJxgBqgELCgMI4QISAghjGAGqARcKAghQEgIIGRIDCIQBEgIITBICCE8YAaoBBwoDCMsBGACqAQ4KAgg1EgIIExICCDIYAZIBAiAB -->
+                        </div>
+                    </div>
+                    <div class="card-details">
+                        <article>
+                            <p>HOTEL THOUSAND PILLARS ,Balasamudhram , Hanamakonda</p>
+                        </article>
+                    </div>
+                    </a>
+                </section>
+                <section class="card">
+                    <a class="card-link"  id="place-card-link" href="">
+                    <div class="card-img-container">
+                        <img class="card-img" src="../img/Hotels/suprabha2.jpg" alt="">
+                        <div class="card-place-name" id = "card-place-name">
+                            <h2>Suprabha Hotel</h2>
+                            <!-- https://www.google.com/travel/hotels/India/entity/CgoIn6b2m5-Al5J-EAEaYkFHWklFZ1lRblp3QWVpRTVHWlFUVDAyX2JsZDFHc3FQeUlGb1dFZnhIeE1tQTZaYlU0SDhxRmc1WWRUTVFWMS1SWVdhT1VFNzBVTmE4Q1k1Q09XNTVzVzFqZF9OYU45VE1R?g2lb=202158%2C2502548%2C4258168%2C4260007%2C4270442%2C4274032%2C4305595%2C4306835%2C4317915%2C4322823%2C4328159%2C4364504%2C4366684%2C4367953%2C4371334%2C4381263%2C4386665%2C4395590%2C4396533%2C4397706%2C4398672%2C4399105%2C4401769%2C4403881%2C4270859%2C4284970%2C4291517%2C4316256&hl=en&gl=in&un=1&ap=aAE&q=5%20star%20hotels%20in%20india&rp=EJr98c-_jeD1IRDX_tym2pDBlMABELKK1_im3KKwgwEQ5YzJtqe9158wOAFAAEgCogEFSW5kaWE&ictx=1&sa=X&utm_campaign=sharing&utm_medium=link&utm_source=htls&hrf=CgUIiCcQACIDSU5SKhYKBwjkDxAIGAMSBwjkDxAIGAQYASgAOAWwAQBYAWgBmgEHEgVJbmRpYaIBEQoIL20vMDNyazASBUluZGlhqgEqCgIIIRICCAgSAghlEgIIFRICCGcSAghbEgIILxICCFoSAghUEgIIIBgBqgEPCgIIEhIDCJsBEgIIaBgBqgESCgIIFBICCB0SAggbEgIIUhgBqgEHCgMIoQIYAKoBGgoCCBwSAggHEgIIURICCHMSAghHEgIINhgBqgEfCgIIJRICCHUSAwigAhICCHcSAgh5EgIIehICCHYYAaoBGwoCCBESAggqEgIIQBICCDgSAwiZAhICCAIYAaoBPgoCCC4SAgg8EgIIVhICCDoSAwiHARICCBoSAghIEgMIgQISAgg9EgMIgwESAggDEgIIDBIDCIkBEgIIJxgBqgELCgMI4QISAghjGAGqARcKAghQEgIIGRIDCIQBEgIITBICCE8YAaoBBwoDCMsBGACqAQ4KAgg1EgIIExICCDIYAZIBAiAB -->
+                        </div>
+                    </div>
+                    <div class="card-details">
+                        <article>
+                            <p>Suprabha Hotel ,Nakkalagutta , Hanamakonda</p>
+                        </article>
+                    </div>
+                    </a>
+                </section>
+                <script>
+                    
+                </script>
+                <section class="card">
+                    <a class="card-link" href="">
+                    <div class="card-img-container">
+                        <img class="card-img" src="../img/Hotels/NSR_hotel.jpg" alt="">
+                        <div class="card-place-name">
+                            <h2>NSR Hotel</h2>
+                            <!-- https://www.google.com/travel/hotels/India/entity/ChkImv3xz7-N4PUhGg0vZy8xMWNzNXJ3azkzEAE?g2lb=202158%2C2502548%2C4258168%2C4260007%2C4270442%2C4274032%2C4305595%2C4306835%2C4317915%2C4322823%2C4328159%2C4364504%2C4366684%2C4367953%2C4371334%2C4381263%2C4386665%2C4395590%2C4396533%2C4397706%2C4398672%2C4399105%2C4401769%2C4403881%2C4270859%2C4284970%2C4291517%2C4316256&hl=en&gl=in&un=1&ap=aAE&q=5%20star%20hotels%20in%20india&rp=EJr98c-_jeD1IRDX_tym2pDBlMABELKK1_im3KKwgwEQ5YzJtqe9158wOAFAAEgCogEFSW5kaWE&ictx=1&sa=X&utm_campaign=sharing&utm_medium=link&utm_source=htls&hrf=CgUIiCcQACIDSU5SKhYKBwjkDxAIGAMSBwjkDxAIGAQYASgAOAWwAQBYAWgBmgEHEgVJbmRpYaIBEQoIL20vMDNyazASBUluZGlhqgEqCgIIIRICCAgSAghlEgIIFRICCGcSAghbEgIILxICCFoSAghUEgIIIBgBqgEPCgIIEhIDCJsBEgIIaBgBqgESCgIIFBICCB0SAggbEgIIUhgBqgEHCgMIoQIYAKoBGgoCCBwSAggHEgIIURICCHMSAghHEgIINhgBqgEfCgIIJRICCHUSAwigAhICCHcSAgh5EgIIehICCHYYAaoBGwoCCBESAggqEgIIQBICCDgSAwiZAhICCAIYAaoBPgoCCC4SAgg8EgIIVhICCDoSAwiHARICCBoSAghIEgMIgQISAgg9EgMIgwESAggDEgIIDBIDCIkBEgIIJxgBqgELCgMI4QISAghjGAGqARcKAghQEgIIGRIDCIQBEgIITBICCE8YAaoBBwoDCMsBGACqAQ4KAgg1EgIIExICCDIYAZIBAiAB -->
+                        </div>
+                    </div>
+                    <div class="card-details">
+                        <article>
+                            <p>NSR Hotel ,Guddepad , Mulugu Road</p>
+                        </article>
+                    </div>
+                    </a>
+                </section>
+                <section class="card">
+                    <a class="card-link" href="">
+                    <div class="card-img-container">
+                        <img class="card-img" src="../img/Hotels/grand_gayathri.jpg" alt="">
+                        <div class="card-place-name">
+                            <h2>Grand Gayathri Hotel</h2>
+                            <!-- https://www.google.com/travel/hotels/India/entity/CgoI7oPEhITgwYQkEAEaYkFHWklFZ1o5VnJLdmVUUnVTaUloVl9UZlh6VEo5cFptX25rODhUZ2U5UTZ1bUp2T2Fidmk4SHBlY1g5WGd0ejhfS2FnYW1IVzkwa3ZiTjNZZmltcE1YRjdnUTJmVWRpTi1B?g2lb=202158%2C2502548%2C4258168%2C4260007%2C4270442%2C4274032%2C4305595%2C4306835%2C4317915%2C4322823%2C4328159%2C4364504%2C4366684%2C4367953%2C4371334%2C4381263%2C4386665%2C4395590%2C4396533%2C4397706%2C4398672%2C4399105%2C4401769%2C4403881%2C4270859%2C4284970%2C4291517%2C4316256&hl=en&gl=in&un=1&ap=aAE&q=5%20star%20hotels%20in%20india&rp=EJr98c-_jeD1IRDX_tym2pDBlMABELKK1_im3KKwgwEQ5YzJtqe9158wOAFAAEgCogEFSW5kaWE&ictx=1&sa=X&utm_campaign=sharing&utm_medium=link&utm_source=htls&hrf=CgUIiCcQACIDSU5SKhYKBwjkDxAIGAMSBwjkDxAIGAQYASgAOAWwAQBYAWgBmgEHEgVJbmRpYaIBEQoIL20vMDNyazASBUluZGlhqgEqCgIIIRICCAgSAghlEgIIFRICCGcSAghbEgIILxICCFoSAghUEgIIIBgBqgEPCgIIEhIDCJsBEgIIaBgBqgESCgIIFBICCB0SAggbEgIIUhgBqgEHCgMIoQIYAKoBGgoCCBwSAggHEgIIURICCHMSAghHEgIINhgBqgEfCgIIJRICCHUSAwigAhICCHcSAgh5EgIIehICCHYYAaoBGwoCCBESAggqEgIIQBICCDgSAwiZAhICCAIYAaoBPgoCCC4SAgg8EgIIVhICCDoSAwiHARICCBoSAghIEgMIgQISAgg9EgMIgwESAggDEgIIDBIDCIkBEgIIJxgBqgELCgMI4QISAghjGAGqARcKAghQEgIIGRIDCIQBEgIITBICCE8YAaoBBwoDCMsBGACqAQ4KAgg1EgIIExICCDIYAZIBAiAB -->
+                        </div>
+                    </div>
+                    <div class="card-details">
+                        <article>
+                            <p>Grand Gayathri Hotel, Warangal railway station , Warangal</p>
+                        </article>
+                    </div>
+                    </a>
+                </section>
+                <section class="card">
+                    <a class="card-link" href="">
+                    <div class="card-img-container">
+                        <img class="card-img" src="../img/Hotels/sai_sri_inn.jpg" alt="">
+                        <div class="card-place-name">
+                            <h2>Sai Sri Inn</h2>
+                            <!-- https://www.google.com/travel/hotels/India/entity/ChkIsorX-KbcorCDARoML2cvMWhnNHc3eWJoEAE?g2lb=202158%2C2502548%2C4258168%2C4260007%2C4270442%2C4274032%2C4305595%2C4306835%2C4317915%2C4322823%2C4328159%2C4364504%2C4366684%2C4367953%2C4371334%2C4381263%2C4386665%2C4395590%2C4396533%2C4397706%2C4398672%2C4399105%2C4401769%2C4403881%2C4270859%2C4284970%2C4291517%2C4316256&hl=en&gl=in&un=1&ap=aAE&q=5%20star%20hotels%20in%20india&rp=EJr98c-_jeD1IRDX_tym2pDBlMABELKK1_im3KKwgwEQ5YzJtqe9158wOAFAAEgCogEFSW5kaWE&ictx=1&sa=X&utm_campaign=sharing&utm_medium=link&utm_source=htls&hrf=CgUIiCcQACIDSU5SKhYKBwjkDxAIGAMSBwjkDxAIGAQYASgAOAWwAQBYAWgBmgEHEgVJbmRpYaIBEQoIL20vMDNyazASBUluZGlhqgEqCgIIIRICCAgSAghlEgIIFRICCGcSAghbEgIILxICCFoSAghUEgIIIBgBqgEPCgIIEhIDCJsBEgIIaBgBqgESCgIIFBICCB0SAggbEgIIUhgBqgEHCgMIoQIYAKoBGgoCCBwSAggHEgIIURICCHMSAghHEgIINhgBqgEfCgIIJRICCHUSAwigAhICCHcSAgh5EgIIehICCHYYAaoBGwoCCBESAggqEgIIQBICCDgSAwiZAhICCAIYAaoBPgoCCC4SAgg8EgIIVhICCDoSAwiHARICCBoSAghIEgMIgQISAgg9EgMIgwESAggDEgIIDBIDCIkBEgIIJxgBqgELCgMI4QISAghjGAGqARcKAghQEgIIGRIDCIQBEgIITBICCE8YAaoBBwoDCMsBGACqAQ4KAgg1EgIIExICCDIYAZIBAiAB -->
+                        </div>
+                    </div>
+                    <div class="card-details">
+                        <article>
+                            <p>Sai Sri Inn ,Near Mulugu x road , Warangal</p>
+                        </article>
+                    </div>
+                    </a>
+                </section>
+                <section class="card">
+                    <a class="card-link" href="">
+                    <div class="card-img-container">
+                        <img class="card-img" src="../img/Hotels/ashoka.jpg" alt="">
+                        <div class="card-place-name">
+                            <h2>Ashoka hotel</h2>
+                        </div>
+                    </div>
+                    <div class="card-details">
+                        <article>
+                            <p>Ashoka Hotel , Hanamakonda
+                                <!-- https://www.google.com/travel/hotels/India/entity/ChkIxPCa3PO18MpzGg0vZy8xMWI3cjViZmJoEAE?g2lb=202158%2C2502548%2C4258168%2C4260007%2C4270442%2C4274032%2C4305595%2C4306835%2C4317915%2C4322823%2C4328159%2C4364504%2C4366684%2C4367953%2C4371334%2C4381263%2C4386665%2C4395590%2C4396533%2C4397706%2C4398672%2C4399105%2C4401769%2C4403881%2C4270859%2C4284970%2C4291517%2C4316256&hl=en&gl=in&un=1&ap=aAE&q=5%20star%20hotels%20in%20india&rp=EJr98c-_jeD1IRDX_tym2pDBlMABELKK1_im3KKwgwEQ5YzJtqe9158wOAFAAEgCogEFSW5kaWE&ictx=1&sa=X&utm_campaign=sharing&utm_medium=link&utm_source=htls&hrf=CgUIiCcQACIDSU5SKhYKBwjkDxAIGAMSBwjkDxAIGAQYASgAOAWwAQBYAWgBmgEHEgVJbmRpYaIBEQoIL20vMDNyazASBUluZGlhqgEqCgIIIRICCAgSAghlEgIIFRICCGcSAghbEgIILxICCFoSAghUEgIIIBgBqgEPCgIIEhIDCJsBEgIIaBgBqgESCgIIFBICCB0SAggbEgIIUhgBqgEHCgMIoQIYAKoBGgoCCBwSAggHEgIIURICCHMSAghHEgIINhgBqgEfCgIIJRICCHUSAwigAhICCHcSAgh5EgIIehICCHYYAaoBGwoCCBESAggqEgIIQBICCDgSAwiZAhICCAIYAaoBPgoCCC4SAgg8EgIIVhICCDoSAwiHARICCBoSAghIEgMIgQISAgg9EgMIgwESAggDEgIIDBIDCIkBEgIIJxgBqgELCgMI4QISAghjGAGqARcKAghQEgIIGRIDCIQBEgIITBICCE8YAaoBBwoDCMsBGACqAQ4KAgg1EgIIExICCDIYAZIBAiAB -->
+                            </p>
+                        </article>
+                    </div>
+                    </a>
+                </section>
+                <section class="card">
+                    <a class="card-link" href="">
+                    <div class="card-img-container">
+                        <img class="card-img" src="../img/Hotels/feriado.jpg" alt="">
+                        <div class="card-place-name">
+                            <h2>Feriado Resorts</h2>
+                        </div>
+                    </div>
+                    <div class="card-details">
+                        <article>
+                            <p>Feriado Resorts , Tadvai , Mulugu</p>
+                            <!-- https://www.google.com/travel/hotels/India/entity/ChkIpL7gsNOTj-nHARoML2cvMXBwMng4dm53EAE?g2lb=202158%2C2502548%2C4258168%2C4260007%2C4270442%2C4274032%2C4305595%2C4306835%2C4317915%2C4322823%2C4328159%2C4364504%2C4366684%2C4367953%2C4371334%2C4381263%2C4386665%2C4395590%2C4396533%2C4397706%2C4398672%2C4399105%2C4401769%2C4403881%2C4270859%2C4284970%2C4291517%2C4316256&hl=en&gl=in&un=1&ap=aAE&q=5%20star%20hotels%20in%20india&rp=EJr98c-_jeD1IRDX_tym2pDBlMABELKK1_im3KKwgwEQ5YzJtqe9158wOAFAAEgCogEFSW5kaWE&ictx=1&sa=X&utm_campaign=sharing&utm_medium=link&utm_source=htls&hrf=CgUIiCcQACIDSU5SKhYKBwjkDxAIGAMSBwjkDxAIGAQYASgAOAWwAQBYAWgBmgEHEgVJbmRpYaIBEQoIL20vMDNyazASBUluZGlhqgEqCgIIIRICCAgSAghlEgIIFRICCGcSAghbEgIILxICCFoSAghUEgIIIBgBqgEPCgIIEhIDCJsBEgIIaBgBqgESCgIIFBICCB0SAggbEgIIUhgBqgEHCgMIoQIYAKoBGgoCCBwSAggHEgIIURICCHMSAghHEgIINhgBqgEfCgIIJRICCHUSAwigAhICCHcSAgh5EgIIehICCHYYAaoBGwoCCBESAggqEgIIQBICCDgSAwiZAhICCAIYAaoBPgoCCC4SAgg8EgIIVhICCDoSAwiHARICCBoSAghIEgMIgQISAgg9EgMIgwESAggDEgIIDBIDCIkBEgIIJxgBqgELCgMI4QISAghjGAGqARcKAghQEgIIGRIDCIQBEgIITBICCE8YAaoBBwoDCMsBGACqAQ4KAgg1EgIIExICCDIYAZIBAiAB -->
+                        </article>
+                    </div>
+                    </a>
+                </section>
+                <section class="card">
+                    <a class="card-link" href="">
+                    <div class="card-img-container">
+                        <img class="card-img" src="../img/Hotels/shreya.JPG" alt="">
+                        <div class="card-place-name">
+                            <h2>Hotel Shreya</h2>
+                        </div>
+                    </div>
+                    <div class="card-details">
+                        <article>
+                            <p>Hotel Shreya , BusStand , Hanamakonda</p>
+                            <!-- https://www.google.com/travel/hotels/India/entity/ChgIsf782sOZ1bSnARoLL2cvMXRqeXMxMW0QAQ?g2lb=202158%2C2502548%2C4258168%2C4260007%2C4270442%2C4274032%2C4305595%2C4306835%2C4317915%2C4322823%2C4328159%2C4364504%2C4366684%2C4367953%2C4371334%2C4381263%2C4386665%2C4395590%2C4396533%2C4397706%2C4398672%2C4399105%2C4401769%2C4403881%2C4270859%2C4284970%2C4291517%2C4316256&hl=en&gl=in&un=1&ap=aAE&q=5%20star%20hotels%20in%20india&rp=EJr98c-_jeD1IRDX_tym2pDBlMABELKK1_im3KKwgwEQ5YzJtqe9158wOAFAAEgCogEFSW5kaWE&ictx=1&sa=X&utm_campaign=sharing&utm_medium=link&utm_source=htls&hrf=CgUIiCcQACIDSU5SKhYKBwjkDxAIGAMSBwjkDxAIGAQYASgAOAWwAQBYAWgBmgEHEgVJbmRpYaIBEQoIL20vMDNyazASBUluZGlhqgEqCgIIIRICCAgSAghlEgIIFRICCGcSAghbEgIILxICCFoSAghUEgIIIBgBqgEPCgIIEhIDCJsBEgIIaBgBqgESCgIIFBICCB0SAggbEgIIUhgBqgEHCgMIoQIYAKoBGgoCCBwSAggHEgIIURICCHMSAghHEgIINhgBqgEfCgIIJRICCHUSAwigAhICCHcSAgh5EgIIehICCHYYAaoBGwoCCBESAggqEgIIQBICCDgSAwiZAhICCAIYAaoBPgoCCC4SAgg8EgIIVhICCDoSAwiHARICCBoSAghIEgMIgQISAgg9EgMIgwESAggDEgIIDBIDCIkBEgIIJxgBqgELCgMI4QISAghjGAGqARcKAghQEgIIGRIDCIQBEgIITBICCE8YAaoBBwoDCMsBGACqAQ4KAgg1EgIIExICCDIYAZIBAiAB -->
+                        </article>
+                    </div>
+                    </a>
+                </section>
+                </div>
+            </div>
+        </div>
+    </section>   
+    <section class="restaurant">
+        <div class="container place-container">
+            <div class="prev-btn ctrl-btn restaurantPrvbtn" > &lt;  </div>
+            <div class="next-btn ctrl-btn restaurantNextbtn"> &gt; </div>
+            <div>
+                <h1>Top Restaurant</h1>
+                <!-- https://www.cntraveller.com/gallery/best-restaurants-in-india -->
+            </div>
+            <hr>
+            <div class="card-container" id="restaurantSlider">
+                <div class="card-wrapper" id="restaurantSlide">
+                <section class="card">
+                    <a class="card-link"  id="place-card-link" href="">
+                    <div class="card-img-container">
+                        <img class="card-img" src="../img/res/paradise.jpeg" alt="">
+                        <div class="card-place-name" id = "card-place-name">
+                            <h2>Paradise</h2>
+                        </div>
+                    </div>
+                    <div class="card-details">
+                        <article>
+                            <p>Paradise restaurant,Hanamakonda, Warangal</p>
+                        </article>
+                    </div>
+                    </a>
+                </section>
+                <section class="card">
+                    <a class="card-link"  id="place-card-link" href="">
+                    <div class="card-img-container">
+                        <img class="card-img" src="../img/res/Aranyam.jpg" alt="">
+                        <div class="card-place-name" id = "card-place-name">
+                            <h2>Aranyam restaurant</h2>
+                        </div>
+                    </div>
+                    <div class="card-details">
+                        <article>
+                            <p>Aranyam restaurant , Nakkalagutta , Hanamakonda</p>
+                        </article>
+                    </div>
+                    </a>
+                </section>
+                <script>
+                    
+                </script>
+                <section class="card">
+                    <a class="card-link" href="">
+                    <div class="card-img-container">
+                        <img class="card-img" src="../img/res/papadams.jpeg" alt="">
+                        <div class="card-place-name">
+                            <h2>Papadams Blue</h2>
+                        </div>
+                    </div>
+                    <div class="card-details">
+                        <article>
+                            <p>Papadams Blue , Nakkalagutta , Hanamakonda</p>
+                        </article>
+                    </div>
+                    </a>
+                </section>
+                <section class="card">
+                    <a class="card-link" href="">
+                    <div class="card-img-container">
+                        <img class="card-img" src="../img/res/newcitydhaba.jpg" alt="">
+                        <div class="card-place-name">
+                            <h2>New City dhaba</h2>
+                        </div>
+                    </div>
+                    <div class="card-details">
+                        <article>
+                            <p>New City dhaba,Naim nagar , Hanamakonda</p>
+                        </article>
+                    </div>
+                    </a>
+                </section>
+                <section class="card">
+                    <a class="card-link" href="">
+                    <div class="card-img-container">
+                        <img class="card-img" src="../img/res/platform.jpeg" alt="">
+                        <div class="card-place-name">
+                            <h2>Platform 65</h2>
+                            <!-- https://www.google.com/search?sxsrf=ALeKk03OULAO3gadTJ8FQ95RkFruD8qHpQ%3A1594297904108&ei=MA4HX9KpBsmH9QOtsL_oBA&q=karavalli+the+gateway+hotel+bangalore&gs_ssp=eJwFwcsJgDAMAFC8Cu7Qi-cmWht1BLdIJK1iUSjFz_a-Vzc2WkSh4cyuQ6jmFt5eWNGTOh8EQIcZXiIS6B1O4whhxbC0B2e-OaXdlE1N5KIPf2a7iiYjfEZOV9Yfy_Ic0A&oq=Karavalli%2C+The+Gateway+Hotel+&gs_lcp=CgZwc3ktYWIQAxgBMgQIIxAnMggILhDHARCvATICCAAyBggAEBYQHjIGCAAQFhAeMgYIABAWEB46BwgAEEcQsANQuClYuClgnkJoAXAAeACAAegDiAHoA5IBAzQtMZgBAKABAaoBB2d3cy13aXo&sclient=psy-ab -->
+                        </div>
+                    </div>
+                    <div class="card-details">
+                        <article>
+                            <p>Platform 65 , Subedari , Hanamakonda</p>
+                            <!-- https://food.ndtv.com/lists/tripadvisor-travellers-choice-awards-indias-10-best-fine-dining-restaurants-1232466 -->
+                        </article>
+                    </div>
+                    </a>
+                </section>
+                <section class="card">
+                    <a class="card-link" href="">
+                    <div class="card-img-container">
+                        <img class="card-img" src="../img/res/kritunga.jpeg" alt="">
+                        <div class="card-place-name">
+                            <h2>kritunga</h2>
+                            <!-- https://food.ndtv.com/lists/tripadvisor-travellers-choice-awards-indias-10-best-fine-dining-restaurants-1232466 -->
+                        </div>
+                    </div>
+                    <div class="card-details">
+                        <article>
+                            <p>Kritunga , Subedari , Hanamakonda</p>
+                        </article>
+                    </div>
+                    </a>
+                </section>
+                <section class="card">
+                    <a class="card-link" href="">
+                    <div class="card-img-container">
+                        <img class="card-img" src="../img/res/president.jpeg" alt="">
+                        <div class="card-place-name">
+                            <h2>President Dhaba</h2>
+                            <!-- https://food.ndtv.com/lists/tripadvisor-travellers-choice-awards-indias-10-best-fine-dining-restaurants-1232466 -->
+                        </div>
+                    </div>
+                    <div class="card-details">
+                        <article>
+                            <p>President Dhaba ,Naim nagar , Hanamakonda</p>
+                        </article>
+                    </div>
+                    </a>
+                </section>
+                <section class="card">
+                    <a class="card-link" href="">
+                    <div class="card-img-container">
+                        <img class="card-img" src="../img/res/zamindar.jpeg" alt="">
+                        <div class="card-place-name">
+                            <h2>Zamindar</h2>
+                            <!-- https://food.ndtv.com/lists/tripadvisor-travellers-choice-awards-indias-10-best-fine-dining-restaurants-1232466 -->
+                        </div>
+                    </div>
+                    <div class="card-details">
+                        <article>
+                            <p>Zamindar , hunter road , Warangal</p>
+                        </article>
+                    </div>
+                    </a>
+                </section>
+                </div>
+            </div>
+        </div>
+    </section> 
+    <footer class="container">
+        <div class="footer-container">
+          <div class="left-col">
+            <p class="logo"> Habibi </p>
+            <div class="social-media">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <p class="rights-text">© 2024 Created By Habibi All Rights Reserved.</p>
+          </div>
+  
+          <div class="right-col">
+            <h1>Became a Subscriber</h1>
+            <div class="border"></div>
+            <p>Enter Your Email to get our news.</p>
+            <form action="" class="newsletter-form">
+              <input type="text" class="txtb" placeholder="Enter Your Email">
+              <input type="submit" class="btn" value="submit">
+            </form>
+          </div>
+        </div>
+      </footer>     
+</body>
+</html>
